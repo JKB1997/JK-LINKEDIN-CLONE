@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedln</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="#" class="logo"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341774515_966401451158000_6010256211710731088_n.png?stp=cp0_dst-png&_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_ohc=n_IHqjzayRwAX83iyzz&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTFgztSkr4_bJ9KCd1QGHFuMpC7-JaO7XWVJ_cW6pGisw&oe=64741FD4" alt=""></a>
+
+            <div class="search-box">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342216507_1333634677509728_6739126905638667155_n.png?stp=cp0_dst-png&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=SugpaI2nU4YAX9E2_SW&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQm11GEEzbtuLTIJtIjGxRCvPs3ddq07PytrYuwMVeDew&oe=64740627" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="nav-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341953063_1603482696816396_1513394073129485087_n.png?stp=cp0_dst-png&_nc_cat=103&ccb=1-7&_nc_sid=aee45a&_nc_ohc=kzkjbZeVW3IAX_gm_0p&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdShWn7M_92LN-IDQwv0DUsTyXXaG1k9jgP7Sxa0vKQHXQ&oe=6474057E" alt=""><span>Home</span></a></li>
+                <li><a href="#"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342712396_1304381170490994_7311825116829620711_n.png?stp=cp0_dst-png&_nc_cat=108&ccb=1-7&_nc_sid=aee45a&_nc_ohc=VUlZ1lcRJXsAX8TTeuB&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSQIo1GfiKptGUu65-CJZ46Pizn2KtgXu9-xZbwvE1wuA&oe=64741418" alt=""><span>My Network</span></a></li>
+                <li><a href="#"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342556332_6277114682308868_5475773285451343462_n.png?stp=cp0_dst-png&_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_ohc=s-s1z2IP9x0AX-49gZr&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTmodb9YBAt76VAE05_prjWT_EWvHY0JrYPA9gVQBh91g&oe=64741D95" alt=""><span>Jobs</span></a></li>
+                <li><a href="#"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341987360_3485620841655930_3752840409792158539_n.png?stp=cp0_dst-png&_nc_cat=108&ccb=1-7&_nc_sid=aee45a&_nc_ohc=KevaeAGHUJYAX_I9V2w&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSEJKuKQl-5-XeP8zKnscyB6a__Y3dvStkmMObP96Vm1Q&oe=647419D3" alt=""><span>Messaging</span></a></li>
+                <li><a href="#"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342598729_615456990498228_182831302123253936_n.png?stp=cp0_dst-png&_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_ohc=Fx_RYaaF0xcAX8f-eKx&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTetulWjhTbuMBUNSUbcY2g_Ei34leBrHxpNh6ZxaEyIA&oe=64740E47" alt=""><span>Notification</span></a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="online">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/343306752_1440327396795364_5834951697021098122_n.png?stp=dst-png_p206x206&_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_ohc=LIKmr4_y7S4AX-wqllw&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTAQZoA7e1c_gmyrds6ChjxzHvdREf8YYL-ie6W3JWeVQ&oe=64741943" alt="" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+            
+        </div>
+
+        <!-- ---------------------------profile-dropdown -menu--------------------------------------- -->
+
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/343306752_1440327396795364_5834951697021098122_n.png?stp=dst-png_p206x206&_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_ohc=LIKmr4_y7S4AX-wqllw&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdT4_IXunio6oXjLnmup7Kq-m3XFsfMLaOfpGqH5RcuyiQ&oe=6474C203" alt="">
+                    <div>
+                        <h3>Rayan Walton</h3>
+                        <a href="#">See Your Profile</a>
+                    </div>
+                </div>
+
+
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342653032_1859688874413011_2050729206174554709_n.png?stp=cp0_dst-png&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=Qqa1XQAnPUIAX8JfWTe&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQJuPEZRFVqfY-TlBdJ8k0He05GhgQhCR5w2_j0fqG_8Q&oe=6474B2A1" alt="">
+                    <p>Give Feedback </p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341919191_6035446459896085_8668124196535929221_n.png?stp=cp0_dst-png&_nc_cat=107&ccb=1-7&_nc_sid=aee45a&_nc_ohc=V2UzYLjiVRoAX--83A2&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQM2QOj8W83-PdkMNSenesdyr2JrytnQ9rZjIUZtd6PJA&oe=6474A8F9" alt="">
+                    <p>Settings & Privacy </p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341925593_764899078465564_5488530398708503335_n.png?stp=cp0_dst-png&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=CgNp4_wuSk0AX9B2-u9&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSl3AGj6NGkjnsNyViX0K68u8Bh2pidDE2t_Z4aEsKUvw&oe=6474C371" alt="">
+                    <p>Help & Support </p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/344167011_1747767312287634_976278492872974288_n.png?stp=cp0_dst-png&_nc_cat=108&ccb=1-7&_nc_sid=aee45a&_nc_ohc=Y6Ug-MYkfiEAX_9BISw&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTmF2Iwb2FeOVtxatT0HHbE7ts5QkcOCuc8xaux9ucG_g&oe=6474BFFD" alt="">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342069819_219532644044355_794542965538519841_n.png?stp=cp0_dst-png&_nc_cat=107&ccb=1-7&_nc_sid=aee45a&_nc_ohc=mOHShluVbpwAX-VmfiS&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSolWUk_F2diMTP3RJlsIWVvtBy1T49_qi3dEg_Vka9dw&oe=6474C760" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- ------------------------------------------------------container------------------------------------- -->
+
+    <div class="container">
+
+        <!-- ---------------------------------------left-sidebar------------------------------- -->
+        <div class="left-sidebar">
+
+            <div class="sidebar-profile-box">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342914265_224801080173837_616426756853677283_n.png?stp=dst-png_p206x206&_nc_cat=104&ccb=1-7&_nc_sid=aee45a&_nc_ohc=3K9WUvdKn8MAX_sPq4j&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdStewoRyYh3-FrALhtR6VX_DQOSngeKO6_rs9B2yhLPWQ&oe=64745B5B" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/343306752_1440327396795364_5834951697021098122_n.png?stp=dst-png_p206x206&_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_ohc=LIKmr4_y7S4AX-wqllw&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQ7003otJrY01iW6K1f3NQ1Oens4VjR9_vJOok9a1oWmA&oe=64745183" >
+                    <h1>Rayan Walton</h1>
+                    <h3>Web Developer at Microsoft</h3>
+                    <ul>
+                        <li>Your Profile Views <span>52</span></li>
+                        <li>Your Post Views <span>970</span></li>
+                        <li>Your Connection <span>209</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#0"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342594814_3012631305533730_5215584654094377924_n.png?stp=cp0_dst-png&_nc_cat=106&ccb=1-7&_nc_sid=aee45a&_nc_ohc=CvIyC5fqPKAAX9bPhG-&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSY4dpBLIRc1ORvr8BbYhgkooWgdT_PyrepnI6TcOlIGw&oe=64745FCD" alt="">My items</a>
+                    <a href="#"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342352263_897503817988597_2700028011014968980_n.png?stp=cp0_dst-png&_nc_cat=110&ccb=1-7&_nc_sid=aee45a&_nc_ohc=uiBj1koF_GgAX9xinKv&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQk6q9U_HSj7DABn0R8DajWuwg4BmE-A2en_zcU9aRVoA&oe=64745194" alt="">Try Premium</a>
+                </div>
+            </div>
+           
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342620860_635721005075497_4396001081309703350_n.png?stp=cp0_dst-png&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=e0nQ_gXoFgAAX-dLxQG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTITWkf-ogrY_YzKdyrk8yPTAdesLDHXRO3EbG-B9IyUw&oe=64745BE1" alt="">Web Development</a>
+                <a href="#"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342620860_635721005075497_4396001081309703350_n.png?stp=cp0_dst-png&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=e0nQ_gXoFgAAX-dLxQG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTITWkf-ogrY_YzKdyrk8yPTAdesLDHXRO3EbG-B9IyUw&oe=64745BE1" alt="">User Interface</a>
+                <a href="#"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342620860_635721005075497_4396001081309703350_n.png?stp=cp0_dst-png&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=e0nQ_gXoFgAAX-dLxQG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTITWkf-ogrY_YzKdyrk8yPTAdesLDHXRO3EbG-B9IyUw&oe=64745BE1" alt="">Online Learning</a>
+                <a href="#"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342620860_635721005075497_4396001081309703350_n.png?stp=cp0_dst-png&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=e0nQ_gXoFgAAX-dLxQG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTITWkf-ogrY_YzKdyrk8yPTAdesLDHXRO3EbG-B9IyUw&oe=64745BE1" alt="">Learn Online</a>
+                <a href="#"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342620860_635721005075497_4396001081309703350_n.png?stp=cp0_dst-png&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=e0nQ_gXoFgAAX-dLxQG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTITWkf-ogrY_YzKdyrk8yPTAdesLDHXRO3EbG-B9IyUw&oe=64745BE1" alt="">Code Better</a>
+                <a href="#"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342620860_635721005075497_4396001081309703350_n.png?stp=cp0_dst-png&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=e0nQ_gXoFgAAX-dLxQG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTITWkf-ogrY_YzKdyrk8yPTAdesLDHXRO3EbG-B9IyUw&oe=64745BE1" alt="">Group Learning</a>
+                <h3>GROUPS</h3>
+                <a href="#"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342832627_155933737434090_384628044122588921_n.png?stp=cp0_dst-png&_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_ohc=f3V5Yl4JYEQAX-id8ox&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTqzniqX6dTimwtZF2t2aSvu5dEAgQyMCDRy-RhDxhrmw&oe=64745153" >Web Design Group</a>
+                <a href="#"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342832627_155933737434090_384628044122588921_n.png?stp=cp0_dst-png&_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_ohc=f3V5Yl4JYEQAX-id8ox&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTqzniqX6dTimwtZF2t2aSvu5dEAgQyMCDRy-RhDxhrmw&oe=64745153" >HTML & CSS Learners</a>
+                <a href="#"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342832627_155933737434090_384628044122588921_n.png?stp=cp0_dst-png&_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_ohc=f3V5Yl4JYEQAX-id8ox&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTqzniqX6dTimwtZF2t2aSvu5dEAgQyMCDRy-RhDxhrmw&oe=64745153" >Python & JavaScript Groups</a>
+                <a href="#"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342832627_155933737434090_384628044122588921_n.png?stp=cp0_dst-png&_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_ohc=f3V5Yl4JYEQAX-id8ox&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTqzniqX6dTimwtZF2t2aSvu5dEAgQyMCDRy-RhDxhrmw&oe=64745153" >Learn Coding Online</a>
+                <h3>HASHTAG</h3>
+                <a href="#"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341963084_920322089260201_57946210407176292_n.png?stp=cp0_dst-png&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=Uz0IDHCe7NoAX-ooHCU&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQQcZTpP4YOZU_BR7gFTiiLoJNivanUxx99D8qL97wlPQ&oe=64743AC6" alt="">webdevelopment</a>
+                <a href="#"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341963084_920322089260201_57946210407176292_n.png?stp=cp0_dst-png&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=Uz0IDHCe7NoAX-ooHCU&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQQcZTpP4YOZU_BR7gFTiiLoJNivanUxx99D8qL97wlPQ&oe=64743AC6" alt="">userinterface</a>
+                <a href="#"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341963084_920322089260201_57946210407176292_n.png?stp=cp0_dst-png&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=Uz0IDHCe7NoAX-ooHCU&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQQcZTpP4YOZU_BR7gFTiiLoJNivanUxx99D8qL97wlPQ&oe=64743AC6" alt="">onlinelearning</a>
+                <div class="discover-more-links">
+                    <a href="#">Discover More</a>
+                </div>
+            </div>
+
+            <p id="showMorelinks" onclick="toggleActivity()">Show More <b>+</b></p>
+
+        </div>
+        
+
+       
+
+        <!-- -------------------------------------------main-content--------------------------------- -->
+        <div class="main-content">
+
+            <div class="creat-post">
+                <div class="creat-post-input">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/343306752_1440327396795364_5834951697021098122_n.png?stp=dst-png_p206x206&_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_ohc=LIKmr4_y7S4AX-wqllw&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQ7003otJrY01iW6K1f3NQ1Oens4VjR9_vJOok9a1oWmA&oe=64745183" alt="">
+                    <textarea  rows="2" placeholder="Write a post"></textarea>
+                </div>
+
+                <div class="creat-post-links">
+                    <li><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342548222_621735169817668_2159308248098563324_n.png?stp=cp0_dst-png&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=wGZ6b3nKXz8AX83rcYU&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRofx2P7Ot-rLCXcYTLyZO4WGgcgd4Y7uAw88o4JnjcTg&oe=647488DC" alt="">Photo</li>
+                    <li><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342812328_739748004542096_2858325683280691992_n.png?stp=cp0_dst-png&_nc_cat=100&ccb=1-7&_nc_sid=aee45a&_nc_ohc=pZYl6MxzRRQAX_qszv7&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdS0kvgOthhemJ33k7TClMNxPBEkf9DZhOumDjpsM-FzNw&oe=64748D0B" alt="">Video</li>
+                    <li><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/344298862_766521195086326_5199304300088909152_n.png?stp=cp0_dst-png&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=1JZcPhkkYsEAX_yQlmS&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdT68HfRpnps8rICLOLgR1V6y0HKsZNKLhJILxwCwqsB7A&oe=64747F8B" alt="">Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+
+
+            <div class="sort-by">
+                <hr>
+                <p>Sort by: <span>top <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341781235_759342109260926_7173935287625706571_n.png?stp=cp0_dst-png&_nc_cat=103&ccb=1-7&_nc_sid=aee45a&_nc_ohc=Y9wR0jkyIQgAX_06oi_&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRXqVXUruG7LUedInKc_NgvhJnyFhGsRJdTZwG8M9SonQ&oe=64748207" alt=""></span></p>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342556331_966431188134757_1368207705474244274_n.png?stp=cp0_dst-png&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=Ynpq01OS6lMAX9AdsbE&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQqXL9v7rcnEkmaI-zJmkk8_JTf4oLEdy4mNPf-So8lGw&oe=647479C1" alt="">
+                    <div>
+                        <h1>Benjalin Leo</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+
+                <p>The success of every websites depends on search engine optimisation and digital marketing strategy. If you are on first page of all major search engines then you are ahead among your competitors.</p>
+
+
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341930204_252782473804719_4109448251234006945_n.png?stp=dst-png_p206x206&_nc_cat=104&ccb=1-7&_nc_sid=aee45a&_nc_ohc=ho5ytfLLg9UAX8ZpacD&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdThwaah140DMBjnOqEMqPHG9bm0wMCW_GJ88WDVQf6mVA&oe=647485F7" alt="" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341972462_935562524564549_4389957639178679571_n.png?stp=cp0_dst-png&_nc_cat=107&ccb=1-7&_nc_sid=aee45a&_nc_ohc=osZTnR_NbboAX9hlEhD&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSBuv6HEQtekF-ZR2SYWXG8gwHK86X8xTEoIhVs5InfKA&oe=64747870" alt="">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342056751_561166712742745_7655163755911439764_n.png?stp=cp0_dst-png&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=TfuB-mRQ2RgAX-DSTjG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTLexoi5a4nZnmK3a3OwGg4ksuiJesjvLyf1DzB42ZZXg&oe=64748B9C" alt="">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341948522_798768891786897_5952910351967372767_n.png?stp=cp0_dst-png&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=_7gkWAE8b8EAX90C145&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdR-XU2kqVkgVd30OTmbSRcz9x1PIxmOQdPHutOTwff1qQ&oe=64748821" alt="">
+                        <span class="liked-user">Abhinav Mishra and 79 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div>
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/343306752_1440327396795364_5834951697021098122_n.png?stp=dst-png_p206x206&_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_ohc=LIKmr4_y7S4AX-wqllw&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQa67vz3pSbq_kRAr8OM_pVTQZPktRpgJ_4J_Q4-lPPtA&oe=647489C3" alt="" class="post-activity-user-icon">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341781235_759342109260926_7173935287625706571_n.png?stp=cp0_dst-png&_nc_cat=103&ccb=1-7&_nc_sid=aee45a&_nc_ohc=Y9wR0jkyIQgAX_06oi_&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRXqVXUruG7LUedInKc_NgvhJnyFhGsRJdTZwG8M9SonQ&oe=64748207" alt="" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342648833_772577397909700_6748082587597817655_n.png?stp=cp0_dst-png&_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_ohc=bhgcFXvXDykAX-buvTU&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdS2oVea5CADukYzW7P3Vrsd_Ymnq26MPSmINCAvweqfqg&oe=64748EEF" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342567290_1948425978876723_2756737065070542648_n.png?stp=cp0_dst-png&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=sPFn74l5d8AAX_-oSkQ&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdT63UzsyLVyo7d6kCQzR8fL6QdyaLsrcNirRu5GXAQVNA&oe=6474A902" alt="">
+                        <span>Comments</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342586050_806343074415854_8245572576150784890_n.png?stp=cp0_dst-png&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=RjcgjiZsZPcAX8DZcBv&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQJyHSOn_Sa4wgSnC04UpQ9VNgDOF0UszCBYyeANEGekg&oe=647497EE" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341695505_792998285365235_7583330949674343949_n.png?stp=cp0_dst-png&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=uYh-zrNokh4AX9z9hYj&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTdmvzjLbOw4YW85h0spFvE4LmizGe94BxgSyJLLQUBdg&oe=6474B3B7" alt="">
+                        <span>Send</span>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            
+            <div class="post">
+                <div class="post-author">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342661922_1189944168344092_6400269797305319934_n.png?stp=cp0_dst-png&_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_ohc=c6RXwzVyqGkAX8tr-6j&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTY4r4SplyCemIdUUi3xFAiIj2qhBRAdGAZBsQ6YSChCg&oe=6474AB3E" alt="">
+                    <div>
+                        <h1>Clarence George</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+
+                <p>The success of every websites depends on search engine optimisation and digital marketing strategy. If you are on first page of all major search engines then you are ahead among your competitors.</p>
+
+
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341963084_10047530181939029_211056289479427392_n.png?stp=dst-png_p206x206&_nc_cat=107&ccb=1-7&_nc_sid=aee45a&_nc_ohc=A41eX_JJnGgAX-xMhI-&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSiS8MwwKrWFLMZZbZxw9t__xzL07_ksPV8EJLigtijmA&oe=64749B79" alt="" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341972462_935562524564549_4389957639178679571_n.png?stp=cp0_dst-png&_nc_cat=107&ccb=1-7&_nc_sid=aee45a&_nc_ohc=osZTnR_NbboAX9hlEhD&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSBuv6HEQtekF-ZR2SYWXG8gwHK86X8xTEoIhVs5InfKA&oe=64747870" alt="">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342056751_561166712742745_7655163755911439764_n.png?stp=cp0_dst-png&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=TfuB-mRQ2RgAX-DSTjG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTLexoi5a4nZnmK3a3OwGg4ksuiJesjvLyf1DzB42ZZXg&oe=64748B9C" alt="">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341948522_798768891786897_5952910351967372767_n.png?stp=cp0_dst-png&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=_7gkWAE8b8EAX90C145&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdR-XU2kqVkgVd30OTmbSRcz9x1PIxmOQdPHutOTwff1qQ&oe=64748821" alt="">
+                        <span class="liked-user">Abhinav Mishra and 79 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div>
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/343306752_1440327396795364_5834951697021098122_n.png?stp=dst-png_p206x206&_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_ohc=LIKmr4_y7S4AX-wqllw&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQa67vz3pSbq_kRAr8OM_pVTQZPktRpgJ_4J_Q4-lPPtA&oe=647489C3" alt="" class="post-activity-user-icon">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341781235_759342109260926_7173935287625706571_n.png?stp=cp0_dst-png&_nc_cat=103&ccb=1-7&_nc_sid=aee45a&_nc_ohc=Y9wR0jkyIQgAX_06oi_&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRXqVXUruG7LUedInKc_NgvhJnyFhGsRJdTZwG8M9SonQ&oe=64748207" alt="" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342648833_772577397909700_6748082587597817655_n.png?stp=cp0_dst-png&_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_ohc=bhgcFXvXDykAX-buvTU&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdS2oVea5CADukYzW7P3Vrsd_Ymnq26MPSmINCAvweqfqg&oe=64748EEF" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342567290_1948425978876723_2756737065070542648_n.png?stp=cp0_dst-png&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=sPFn74l5d8AAX_-oSkQ&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdT63UzsyLVyo7d6kCQzR8fL6QdyaLsrcNirRu5GXAQVNA&oe=6474A902" alt="">
+                        <span>Comments</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342586050_806343074415854_8245572576150784890_n.png?stp=cp0_dst-png&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=RjcgjiZsZPcAX8DZcBv&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQJyHSOn_Sa4wgSnC04UpQ9VNgDOF0UszCBYyeANEGekg&oe=647497EE" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341695505_792998285365235_7583330949674343949_n.png?stp=cp0_dst-png&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=uYh-zrNokh4AX9z9hYj&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTdmvzjLbOw4YW85h0spFvE4LmizGe94BxgSyJLLQUBdg&oe=6474B3B7" alt="">
+                        <span>Send</span>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            
+            
+            <div class="post">
+                <div class="post-author">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341894263_2107559669450445_1224655895709899880_n.png?stp=dst-png_p206x206&_nc_cat=104&ccb=1-7&_nc_sid=aee45a&_nc_ohc=yyyyFO4cKEcAX8epjFE&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQtGaX0gSUkMRC1dW-tf8HEVHpZecpMIbo6Ol0GPxn0Sw&oe=6474A4A0" alt="">
+                    <div>
+                        <h1>Clarence George</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+
+                <p>The success of every websites depends on search engine optimisation and digital marketing strategy. If you are on first page of all major search engines then you are ahead among your competitors.</p>
+
+
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341894263_2107559669450445_1224655895709899880_n.png?stp=dst-png_p206x206&_nc_cat=104&ccb=1-7&_nc_sid=aee45a&_nc_ohc=yyyyFO4cKEcAX8epjFE&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQtGaX0gSUkMRC1dW-tf8HEVHpZecpMIbo6Ol0GPxn0Sw&oe=6474A4A0" alt="" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341972462_935562524564549_4389957639178679571_n.png?stp=cp0_dst-png&_nc_cat=107&ccb=1-7&_nc_sid=aee45a&_nc_ohc=osZTnR_NbboAX9hlEhD&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSBuv6HEQtekF-ZR2SYWXG8gwHK86X8xTEoIhVs5InfKA&oe=64747870" alt="">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342056751_561166712742745_7655163755911439764_n.png?stp=cp0_dst-png&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=TfuB-mRQ2RgAX-DSTjG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTLexoi5a4nZnmK3a3OwGg4ksuiJesjvLyf1DzB42ZZXg&oe=64748B9C" alt="">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341948522_798768891786897_5952910351967372767_n.png?stp=cp0_dst-png&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=_7gkWAE8b8EAX90C145&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdR-XU2kqVkgVd30OTmbSRcz9x1PIxmOQdPHutOTwff1qQ&oe=64748821" alt="">
+                        <span class="liked-user">Abhinav Mishra and 79 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div>
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/343306752_1440327396795364_5834951697021098122_n.png?stp=dst-png_p206x206&_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_ohc=LIKmr4_y7S4AX-wqllw&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQa67vz3pSbq_kRAr8OM_pVTQZPktRpgJ_4J_Q4-lPPtA&oe=647489C3" alt="" class="post-activity-user-icon">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341781235_759342109260926_7173935287625706571_n.png?stp=cp0_dst-png&_nc_cat=103&ccb=1-7&_nc_sid=aee45a&_nc_ohc=Y9wR0jkyIQgAX_06oi_&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRXqVXUruG7LUedInKc_NgvhJnyFhGsRJdTZwG8M9SonQ&oe=64748207" alt="" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342648833_772577397909700_6748082587597817655_n.png?stp=cp0_dst-png&_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_ohc=bhgcFXvXDykAX-buvTU&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdS2oVea5CADukYzW7P3Vrsd_Ymnq26MPSmINCAvweqfqg&oe=64748EEF" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342567290_1948425978876723_2756737065070542648_n.png?stp=cp0_dst-png&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=sPFn74l5d8AAX_-oSkQ&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdT63UzsyLVyo7d6kCQzR8fL6QdyaLsrcNirRu5GXAQVNA&oe=6474A902" alt="">
+                        <span>Comments</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342586050_806343074415854_8245572576150784890_n.png?stp=cp0_dst-png&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=RjcgjiZsZPcAX8DZcBv&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQJyHSOn_Sa4wgSnC04UpQ9VNgDOF0UszCBYyeANEGekg&oe=647497EE" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341695505_792998285365235_7583330949674343949_n.png?stp=cp0_dst-png&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=uYh-zrNokh4AX9z9hYj&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTdmvzjLbOw4YW85h0spFvE4LmizGe94BxgSyJLLQUBdg&oe=6474B3B7" alt="">
+                        <span>Send</span>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341894263_2107559669450445_1224655895709899880_n.png?stp=dst-png_p206x206&_nc_cat=104&ccb=1-7&_nc_sid=aee45a&_nc_ohc=yyyyFO4cKEcAX8epjFE&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQtGaX0gSUkMRC1dW-tf8HEVHpZecpMIbo6Ol0GPxn0Sw&oe=6474A4A0" alt="">
+                    <div>
+                        <h1>Clarence George</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+
+                <p>The success of every websites depends on search engine optimisation and digital marketing strategy. If you are on first page of all major search engines then you are ahead among your competitors.</p>
+
+
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/344300032_762268232107466_6681064793825207149_n.png?stp=dst-png_p206x206&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=M9ea69sDhSAAX_PSCh8&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdS5PDZp06rTDOAofBHP7H2SYJl4CWv9jWHAgKeY2XwgbA&oe=6474D3EA" alt="" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341972462_935562524564549_4389957639178679571_n.png?stp=cp0_dst-png&_nc_cat=107&ccb=1-7&_nc_sid=aee45a&_nc_ohc=osZTnR_NbboAX9hlEhD&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSBuv6HEQtekF-ZR2SYWXG8gwHK86X8xTEoIhVs5InfKA&oe=64747870" alt="">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342056751_561166712742745_7655163755911439764_n.png?stp=cp0_dst-png&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=TfuB-mRQ2RgAX-DSTjG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTLexoi5a4nZnmK3a3OwGg4ksuiJesjvLyf1DzB42ZZXg&oe=64748B9C" alt="">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341948522_798768891786897_5952910351967372767_n.png?stp=cp0_dst-png&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=_7gkWAE8b8EAX90C145&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdR-XU2kqVkgVd30OTmbSRcz9x1PIxmOQdPHutOTwff1qQ&oe=64748821" alt="">
+                        <span class="liked-user">Abhinav Mishra and 79 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div>
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/343306752_1440327396795364_5834951697021098122_n.png?stp=dst-png_p206x206&_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_ohc=LIKmr4_y7S4AX-wqllw&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQa67vz3pSbq_kRAr8OM_pVTQZPktRpgJ_4J_Q4-lPPtA&oe=647489C3" alt="" class="post-activity-user-icon">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341781235_759342109260926_7173935287625706571_n.png?stp=cp0_dst-png&_nc_cat=103&ccb=1-7&_nc_sid=aee45a&_nc_ohc=Y9wR0jkyIQgAX_06oi_&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRXqVXUruG7LUedInKc_NgvhJnyFhGsRJdTZwG8M9SonQ&oe=64748207" alt="" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342648833_772577397909700_6748082587597817655_n.png?stp=cp0_dst-png&_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_ohc=bhgcFXvXDykAX-buvTU&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdS2oVea5CADukYzW7P3Vrsd_Ymnq26MPSmINCAvweqfqg&oe=64748EEF" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342567290_1948425978876723_2756737065070542648_n.png?stp=cp0_dst-png&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=sPFn74l5d8AAX_-oSkQ&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdT63UzsyLVyo7d6kCQzR8fL6QdyaLsrcNirRu5GXAQVNA&oe=6474A902" alt="">
+                        <span>Comments</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342586050_806343074415854_8245572576150784890_n.png?stp=cp0_dst-png&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=RjcgjiZsZPcAX8DZcBv&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQJyHSOn_Sa4wgSnC04UpQ9VNgDOF0UszCBYyeANEGekg&oe=647497EE" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341695505_792998285365235_7583330949674343949_n.png?stp=cp0_dst-png&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=uYh-zrNokh4AX9z9hYj&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTdmvzjLbOw4YW85h0spFvE4LmizGe94BxgSyJLLQUBdg&oe=6474B3B7" alt="">
+                        <span>Send</span>
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+        </div>
+
+
+        <!-- ---------------------------------------------right-sidebar--------------------------------- -->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341803646_187836730792593_6617517045852614741_n.png?stp=cp0_dst-png&_nc_cat=108&ccb=1-7&_nc_sid=aee45a&_nc_ohc=2bMIXbrUkvgAX-dloNj&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRONsG2cQYmMWhMfH0kJt-y_820BH3IoQEBI_wwqvur7g&oe=64744185" class="info-icon">
+                <h3>Trending News</h3>
+                <a href="#">High demand for skilled manpower</a>
+                <span>1d ago &middot; 10,934 readers</span>
+
+                <a href="#">Careers growing horizontally too</a>
+                <span>19h ago &middot; 1,552 readers</span>
+
+                <a href="#">Less work visa for US, more for UK</a>
+                <span>1d ago &middot; 20,934 readers</span>
+
+                <a href="#">More hiring = higher confidence?</a>
+                <span>18h ago &middot; 10,934 readers</span>
+
+                <a href="#">Gautam Adani is the world's third richest</a>
+                <span>12h ago &middot; 10,589 readers</span>
+
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+
+            <div class="sidebar-add">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the 5 principles of web design</p>
+                <div>
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/343306752_1440327396795364_5834951697021098122_n.png?stp=dst-png_p206x206&_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_ohc=LIKmr4_y7S4AX-wqllw&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTAQZoA7e1c_gmyrds6ChjxzHvdREf8YYL-ie6W3JWeVQ&oe=64741943" alt="">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/342382349_1317541425465591_2674681815156750769_n.png?_nc_cat=103&ccb=1-7&_nc_sid=aee45a&_nc_ohc=jb_jj5UX9ssAX-rqvw6&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQWbXkIOUaV7cPguywH5TX7EdrvPtUKEJlPa7WYI3axHQ&oe=64746C27" alt="">
+                </div>
+                <b>Brand and Demand in Xiaomi</b>
+                <a href="#" class="add-link">Learn More</a>
+            </div>
+
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the App</a>
+                <a href="#">More</a>
+
+                <div class="copy-right-msg">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/341774515_966401451158000_6010256211710731088_n.png?stp=cp0_dst-png&_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_ohc=n_IHqjzayRwAX83iyzz&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTjsXZJWc6j88C_R6Cgm1LMDLhYeTayerZKkOc6NdKL9A&oe=64745814" alt="">
+                    <p>Linkedln &#169; 2022. All right reserved</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+
+        let profileMenu = document.getElementById("profileMenu")
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+
+        }
+
+
+    </script>
+    <script src="script.js"></script>
+
+</body>
+</html>
